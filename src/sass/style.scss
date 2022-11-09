@@ -1,8 +1,21 @@
 @import "normalize.scss";
 @import "fonts.scss";
+@import "base/variables";
 
 * {
     font-family: "Muller", sans-serif;
+}
+
+.main-container {
+    position: relative;
+    max-width: 1555px;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    max-width: 984px;
+    margin: 0 auto;
 }
 
 html {
@@ -26,8 +39,14 @@ ul {
 a {
     text-decoration: none;
 }
+h2 {
+    margin: 0;
+}
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+@import "blocks/btn";
+@import "blocks/promo";

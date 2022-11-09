@@ -1,7 +1,0 @@
-.title {
-  position: absolute * auto;
-
-  &__wrap {
-    display: none;
-  }
-}
