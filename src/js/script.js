@@ -3,9 +3,11 @@
 const wholeSlider = document.querySelector(".slider__wrapper"),
     slides = document.querySelectorAll(".slider__item"),
     prev = document.querySelector(".slider__btn-left"),
-    next = document.querySelector(".slider__btn-rigth");
+    next = document.querySelector(".slider__btn-rigth"),
+    btnSubmit = document.querySelector(".connection__button"),
+    submitWindow = document.querySelector(".submit");
 
-prev.addEventListener("click", function () {
+prev.addEventListener("click", () => {
     for (let i = 0; i < slides.length; i++) {
         if (slides[i].classList.contains("slider__item-active") && i !== 0) {
             slides[i].classList.remove("slider__item-active");
@@ -22,7 +24,7 @@ prev.addEventListener("click", function () {
     }
 });
 
-next.addEventListener("click", function () {
+next.addEventListener("click", () => {
     for (let k = slides.length - 1; k >= 0; k--) {
         if (slides[k].classList.contains("slider__item-active") && k !== 2) {
             slides[k].classList.remove("slider__item-active");
@@ -35,4 +37,9 @@ next.addEventListener("click", function () {
             }
         }
     }
+});
+
+btnSubmit.addEventListener("click", (event) => {
+    event.preventDefault();
+    submitWindow.style.display = "block";
 });
