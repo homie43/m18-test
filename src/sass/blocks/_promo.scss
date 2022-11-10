@@ -7,6 +7,7 @@
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 106px;
+    overflow: hidden;
 
     &-about {
         display: flex;
@@ -39,7 +40,7 @@
 
             &-data {
                 margin-left: 31px;
-                color: #666;
+                color: $color-gray;
             }
         }
 
@@ -74,9 +75,9 @@
 
     &-video {
         position: relative;
-        width: 53%;
+        // width: 53%;
+        // height: 52%;
         max-width: 940px;
-        height: 52%;
         &__contacts {
             position: absolute;
             top: 40px;

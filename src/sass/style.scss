@@ -39,7 +39,12 @@ ul {
 a {
     text-decoration: none;
 }
-h2 {
+h2,
+h3 {
+    margin: 0;
+}
+
+p {
     margin: 0;
 }
 
@@ -50,3 +55,6 @@ img {
 
 @import "blocks/btn";
 @import "blocks/promo";
+@import "blocks/title";
+@import "blocks/repair";
+@import "blocks/slider";

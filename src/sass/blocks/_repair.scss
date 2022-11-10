@@ -1,0 +1,42 @@
+.repair {
+    padding-top: 170px;
+    &__subtitle {
+        margin-bottom: 62px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        column-gap: 80px;
+        &-text {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-gray;
+            margin-top: 12px;
+        }
+    }
+
+    &__item {
+        max-width: 450px;
+        border-top: 4px solid #33b5a3;
+        margin-bottom: 64px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &:last-child {
+            border: 4px solid #33b5a3;
+            padding-top: 40px;
+            padding-bottom: 38px;
+        }
+
+        &-title {
+            text-align: center;
+        }
+
+        &-subtitle {
+            margin-top: 7px;
+            text-align: center;
+        }
+    }
+}

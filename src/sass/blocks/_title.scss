@@ -1,0 +1,29 @@
+.title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.1px;
+    color: #000000;
+
+    &_fsz64 {
+        font-size: 64px;
+    }
+
+    &_fsz24 {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.05px;
+    }
+}
+
+.subtitle {
+    &_fsz16 {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.62px;
+        text-transform: uppercase;
+        color: $color-green;
+        margin-top: 8px;
+    }
+}
