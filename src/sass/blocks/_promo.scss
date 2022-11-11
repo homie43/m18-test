@@ -40,7 +40,7 @@
 
             &-data {
                 margin-left: 31px;
-                color: $color-gray;
+                color: $color-grey;
             }
         }
 
@@ -60,15 +60,13 @@
                 left: 10px;
                 width: 41px;
                 height: 33px;
-                background: url("../img/arrows.svg") center center/cover
-                    no-repeat;
+                background: url("../img/arrows.svg") center center/cover no-repeat;
             }
 
             &:hover::before,
             &:focus::before {
                 width: 33px;
-                background: url("../img/arrows-click.svg") center center/cover
-                    no-repeat;
+                background: url("../img/arrows-click.svg") center center/cover no-repeat;
             }
         }
     }
@@ -100,8 +98,7 @@
                     left: 0;
                     width: 27px;
                     height: 27px;
-                    background: url("../../img/phone.svg") center center/cover
-                        no-repeat;
+                    background: url("../../img/phone.svg") center center/cover no-repeat;
                 }
             }
         }

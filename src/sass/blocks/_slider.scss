@@ -65,7 +65,7 @@
         margin: 0;
         font-size: 13px;
         line-height: 1.54;
-        color: $color-gray;
+        color: $color-grey;
         transition: all 700ms ease-in-out;
     }
 
@@ -86,29 +86,25 @@
         cursor: pointer;
 
         &-rigth {
-            background: url("../../img/btn-right.svg") center center/cover
-                no-repeat;
+            background: url("../../img/btn-right.svg") center center/cover no-repeat;
             right: 0;
             margin-left: 18px;
 
             &:hover,
             &:focus {
-                background: url("../../img/btn-right-click.svg") center
-                    center/cover no-repeat;
+                background: url("../../img/btn-right-click.svg") center center/cover no-repeat;
                 height: 33px;
                 transform: translateY(-7px);
             }
         }
 
         &-left {
-            background: url("../../img/btn-right.svg") center center/cover
-                no-repeat;
+            background: url("../../img/btn-right.svg") center center/cover no-repeat;
             transform: rotate(180deg);
 
             &:hover,
             &:focus {
-                background: url("../../img/btn-right-click.svg") center
-                    center/cover no-repeat;
+                background: url("../../img/btn-right-click.svg") center center/cover no-repeat;
                 transform: translateY(-7px) rotate(180deg);
                 height: 33px;
             }

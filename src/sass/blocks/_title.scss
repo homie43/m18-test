@@ -17,13 +17,13 @@
 }
 
 .subtitle {
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0.62px;
+    text-transform: uppercase;
+    color: $color-green;
+    margin-top: 8px;
     &_fsz16 {
-        font-weight: normal;
         font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.62px;
-        text-transform: uppercase;
-        color: $color-green;
-        margin-top: 8px;
     }
 }
