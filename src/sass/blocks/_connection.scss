@@ -18,7 +18,7 @@
         z-index: 1;
         width: 702px;
         padding-left: 21px;
-        background-color: #fff;
+        background-color: $color-white;
     }
 
     &__subtitle {
@@ -31,7 +31,7 @@
         line-height: 1.5;
         letter-spacing: 0.4pt;
         text-transform: uppercase;
-        color: #000;
+        color: $color-black;
         &::before {
             content: "";
             position: absolute;
@@ -87,7 +87,7 @@
             padding: 0 5px;
             font-size: 13px;
             color: $color-orange;
-            background-color: #fff;
+            background-color: $color-white;
         }
 
         &:focus-within {

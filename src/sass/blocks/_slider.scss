@@ -11,7 +11,7 @@
         display: flex;
         width: 194%;
         transform: translate(-25%);
-        transition: all 700ms ease;
+        transition: all $transition-700 ease;
     }
 
     &__item {
