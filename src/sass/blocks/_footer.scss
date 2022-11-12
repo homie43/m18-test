@@ -17,13 +17,13 @@
             background-color: $color-orange;
             transition: $transition-600;
             &-fb {
-                background-image: url("../../img/facebook.svg");
+                background-image: url("../img/facebook.svg");
             }
             &-vk {
-                background-image: url("../../img/vk.svg");
+                background-image: url("../img/vk.svg");
             }
             &-inst {
-                background-image: url("../../img/instagram.svg");
+                background-image: url("../img/instagram.svg");
             }
 
             &:hover,
@@ -70,7 +70,7 @@
             left: 0;
             width: 27px;
             height: 27px;
-            background: url("../../img/phone.svg") center center/cover no-repeat;
+            background: url("../img/phone.svg") center center/cover no-repeat;
         }
     }
 
@@ -104,7 +104,7 @@
             left: -40px;
             width: 32px;
             height: 22px;
-            background: url("../../img/letter.svg") center center/cover no-repeat;
+            background: url("../img/letter.svg") center center/cover no-repeat;
         }
         &:hover,
         &:focus {

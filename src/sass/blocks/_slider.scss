@@ -72,24 +72,26 @@
         cursor: pointer;
 
         &-rigth {
-            background: url("../../img/btn-right.svg") center center/cover no-repeat;
+            background: url("../img/btn-right.svg") center center/cover no-repeat;
             margin-left: 25px;
 
             &:hover,
             &:focus {
-                background: url("../../img/btn-right-click.svg") center center/cover no-repeat;
+                background: url("../img/btn-right-click.svg") center center/cover
+                    no-repeat;
                 transform: translateY(-7px);
                 height: 33px;
             }
         }
 
         &-left {
-            background: url("../../img/btn-right.svg") center center/cover no-repeat;
+            background: url("../img/btn-right.svg") center center/cover no-repeat;
             transform: rotate(180deg);
 
             &:hover,
             &:focus {
-                background: url("../../img/btn-right-click.svg") center center/cover no-repeat;
+                background: url("../img/btn-right-click.svg") center center/cover
+                    no-repeat;
                 transform: translateY(-7px) rotate(180deg);
                 height: 33px;
             }
