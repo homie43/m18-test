@@ -1,6 +1,7 @@
 @import "normalize.scss";
 @import "fonts.scss";
 @import "base/variables";
+@import "blocks/title";
 
 * {
     font-family: "Muller", sans-serif;
@@ -55,7 +56,7 @@ img {
 
 @import "blocks/btn";
 @import "blocks/promo";
-@import "blocks/title";
+
 @import "blocks/repair";
 @import "blocks/slider";
 @import "blocks/connection";

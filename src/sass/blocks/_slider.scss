@@ -11,11 +11,10 @@
         display: flex;
         width: 194%;
         transform: translate(-25%);
-        transition: all 500ms ease;
+        transition: all 700ms ease;
     }
 
     &__item {
-        position: relative;
         height: 13.8274336%;
         margin-right: 4.5630531%;
 
@@ -36,24 +35,12 @@
         }
 
         &-active {
+            position: relative;
             margin-right: 6%;
 
             .slider__text {
                 display: block;
             }
-        }
-
-        &-active:last-child {
-            margin-right: 14%;
-        }
-
-        &-active .slider__style {
-            display: block;
-        }
-        img {
-            border: 0;
-            max-width: 100%;
-            height: auto;
         }
     }
 
@@ -66,18 +53,15 @@
         font-size: 13px;
         line-height: 1.54;
         color: $color-grey;
-        transition: all 700ms ease-in-out;
     }
 
     &__btns {
         position: absolute;
         bottom: 5px;
-        margin: 0 auto;
-        left: 66%;
+        left: 68.5%;
     }
 
     &__btn {
-        position: relative;
         width: 24px;
         height: 46px;
         padding: 0;
@@ -87,14 +71,13 @@
 
         &-rigth {
             background: url("../../img/btn-right.svg") center center/cover no-repeat;
-            right: 0;
-            margin-left: 18px;
+            margin-left: 25px;
 
             &:hover,
             &:focus {
                 background: url("../../img/btn-right-click.svg") center center/cover no-repeat;
-                height: 33px;
                 transform: translateY(-7px);
+                height: 33px;
             }
         }
 

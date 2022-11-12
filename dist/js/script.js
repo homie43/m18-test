@@ -15,7 +15,7 @@ const mySlider = () => {
                 slides[i].previousElementSibling.classList.add("slider__item-active");
 
                 if (i === 1) {
-                    wholeSlider.style.transform = "translate(0px)";
+                    wholeSlider.style.transform = "translate(0%)";
                 } else {
                     wholeSlider.style.transform = "translate(-25%)";
                 }
@@ -28,7 +28,6 @@ const mySlider = () => {
             if (slides[k].classList.contains("slider__item-active") && k !== 2) {
                 slides[k].classList.remove("slider__item-active");
                 slides[k].nextElementSibling.classList.add("slider__item-active");
-
                 if (k === 1) {
                     wholeSlider.style.transform = "translate(-50%)";
                 } else {

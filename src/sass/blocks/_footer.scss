@@ -15,7 +15,7 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-color: $color-orange;
-            transition: 400ms;
+            transition: 0.6s;
             &-fb {
                 background-image: url("../../img/facebook.svg");
             }
@@ -35,8 +35,8 @@
     }
 
     &__info {
-        font-size: 21px;
         font-weight: 400;
+        font-size: 21px;
         line-height: 26px;
         text-align: center;
         letter-spacing: -0.01px;
@@ -48,6 +48,7 @@
         color: $color-grey;
         text-align: center;
         margin-bottom: 92px;
+        line-height: 1.5;
     }
 
     &__contacts {
@@ -77,7 +78,7 @@
         &-title {
             font-size: 21px;
             font-weight: 400;
-            line-height: 26px;
+            line-height: 1.5;
             text-align: center;
             letter-spacing: -0.01px;
             color: #000000;
@@ -112,21 +113,20 @@
     }
 
     &__company {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            background-color: #ccc;
+            width: 93%;
+            top: -33px;
+            left: 50%;
+            transform: translate(-50%);
+        }
         &-title {
-            position: relative;
             color: $color-grey;
             text-align: center;
-            &::before {
-                content: "";
-                position: absolute;
-                top: -33px;
-                left: 50%;
-                transform: translate(-50%);
-                width: 1720px;
-                height: 1px;
-                margin: 0 auto;
-                background-color: #ccc;
-            }
         }
     }
 }
