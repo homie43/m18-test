@@ -130,3 +130,20 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .footer {
+        &__contacts {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__phone {
+            margin-bottom: 20px;
+        }
+
+        &__email {
+            margin-top: 20px;
+        }
+    }
+}

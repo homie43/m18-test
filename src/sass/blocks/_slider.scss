@@ -15,8 +15,10 @@
     }
 
     &__item {
+        position: relative;
         height: 13.8274336%;
         margin-right: 4.5630531%;
+        opacity: 0.6;
 
         &:first-child {
             margin-left: 12%;
@@ -35,8 +37,8 @@
         }
 
         &-active {
-            position: relative;
             margin-right: 6%;
+            opacity: unset;
 
             .slider__text {
                 display: block;
@@ -48,7 +50,7 @@
         display: none;
         position: absolute;
         top: 0;
-        right: -163px;
+        right: -160px;
         margin: 0;
         font-size: 13px;
         line-height: 1.54;
@@ -90,6 +92,73 @@
                 background: url("../../img/btn-right-click.svg") center center/cover no-repeat;
                 transform: translateY(-7px) rotate(180deg);
                 height: 33px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .slider {
+        &__wrapper {
+            transform: translate(-32%);
+        }
+
+        &__item {
+            &:last-child {
+                margin-right: 7%;
+            }
+        }
+
+        &__btns {
+            left: 64.5%;
+        }
+    }
+}
+
+@media (max-width: 1274px) {
+    .slider {
+        .container {
+            max-width: 768px;
+        }
+        &__wrapper {
+            transform: translate(-32%);
+        }
+        &__item {
+            &:last-child {
+                margin-right: 7%;
+            }
+        }
+
+        &__btns {
+            left: 64.5%;
+        }
+    }
+}
+
+@media (max-width: 1074px) {
+    .slider {
+        &__item {
+            opacity: 0;
+            &-active {
+                width: 50%;
+                opacity: unset;
+            }
+        }
+        &__btns {
+            left: 78.5%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 640px;
+    }
+    .slider {
+        height: 70vh;
+        &__item {
+            &-active {
+                width: 76%;
             }
         }
     }

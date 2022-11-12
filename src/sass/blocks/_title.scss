@@ -1,12 +1,13 @@
 .title {
     font-weight: 500;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 1;
     letter-spacing: -0.1px;
     color: #000000;
 
     &_fsz64 {
         font-size: 64px;
+        letter-spacing: -0.5px;
     }
 
     &_fsz24 {

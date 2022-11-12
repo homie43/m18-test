@@ -7,6 +7,8 @@ const wholeSlider = document.querySelector(".slider__wrapper"),
     btnSubmit = document.querySelector(".connection__button"),
     submitWindow = document.querySelector(".submit");
 
+const mediaMin = window.matchMedia("(max-width: 1440px)");
+
 const mySlider = () => {
     prev.addEventListener("click", () => {
         for (let i = 0; i < slides.length; i++) {
@@ -19,6 +21,14 @@ const mySlider = () => {
                 } else {
                     wholeSlider.style.transform = "translate(-25%)";
                 }
+
+                if (mediaMin.matches) {
+                    if (i === 1) {
+                        wholeSlider.style.transform = "translate(-4%)";
+                    } else {
+                        wholeSlider.style.transform = "translate(-32%)";
+                    }
+                }
             }
         }
     });
@@ -28,10 +38,19 @@ const mySlider = () => {
             if (slides[k].classList.contains("slider__item-active") && k !== 2) {
                 slides[k].classList.remove("slider__item-active");
                 slides[k].nextElementSibling.classList.add("slider__item-active");
+
                 if (k === 1) {
                     wholeSlider.style.transform = "translate(-50%)";
                 } else {
                     wholeSlider.style.transform = "translate(-25%)";
+                }
+
+                if (mediaMin.matches) {
+                    if (k === 1) {
+                        wholeSlider.style.transform = "translate(-61%)";
+                    } else {
+                        wholeSlider.style.transform = "translate(-32%)";
+                    }
                 }
             }
         }
