@@ -18,6 +18,14 @@
 
 `git clone https://github.com/homie43/m18-test`
 
+
 или вы можете просто скачать ZIP Архив черезе директорию < > Code
 
 ![alt-текст](https://sites.northwestern.edu/researchcomputing/files/2021/05/github.png "Картинка загрузки репозитория")
+
+В директории запустить проект в режиме разработки:
+
+```
+npm install 
+npm start
+```
