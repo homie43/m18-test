@@ -2,11 +2,18 @@ const gulp = require("gulp");
 const browserSync = require("browser-sync");
 const sass = require("gulp-sass")(require("sass"));
 const cleanCSS = require("gulp-clean-css");
-const autoprefixer = require("gulp-autoprefixer");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const htmlmin = require("gulp-htmlmin");
 const minify = require("gulp-minify");
+const ghPages = require("gulp-gh-pages");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
+
+gulp.task("deploy", function () {
+    return gulp.src("./dist/**/*").pipe(ghPages());
+});
 
 gulp.task("server", function () {
     browserSync({
@@ -19,12 +26,13 @@ gulp.task("server", function () {
 });
 
 gulp.task("styles", function () {
+    const processors = [autoprefixer, cssnano];
+
     return gulp
         .src("src/sass/**/*.+(scss|sass)")
         .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
         .pipe(rename({ suffix: ".min", prefix: "" }))
-        .pipe(autoprefixer())
-        .pipe(cleanCSS({ compatibility: "ie8" }))
+        .pipe(postcss(processors))
         .pipe(gulp.dest("dist/css"))
         .pipe(browserSync.stream());
 });
