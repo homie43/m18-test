@@ -45,6 +45,8 @@
     }
 
     &__text {
+        max-width: 440px;
+        margin: 0 auto;
         color: $color-grey;
         text-align: center;
         margin-bottom: 92px;
